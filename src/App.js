@@ -6,7 +6,7 @@ import Navbar from "./navbar/Navbar";
 function App() {
   return (
     <div className="App">
-      <h1>Linguagem de Progamação</h1>
+      <h1>Listas de Contatos</h1>
       <header>{/* menus */}
       <Navbar/>
       </header>
