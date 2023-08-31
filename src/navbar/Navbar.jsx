@@ -4,7 +4,7 @@ function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#">Curso JavaScript</a>
+                <a className="navbar-brand" href="#">JavaScript</a>
                 <button className="navbar-toggler" 
                 type="button" 
                 data-bs-toggle="collapse" 
