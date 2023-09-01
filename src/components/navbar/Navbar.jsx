@@ -4,7 +4,7 @@ function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#">Home</a>
+                <a className="navbar-brand" href="#">Informações</a>
                 <button className="navbar-toggler" 
                 type="button" 
                 data-bs-toggle="collapse" 
@@ -18,13 +18,13 @@ function Navbar() {
                     <ul className="navbar-nav">
                         <li className="nav-item">
                             <a className="nav-link active" 
-                            aria-current="page" href="#">Nome</a>
+                            aria-current="page" href="#">Contatos</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Telefone</a>
+                            <a className="nav-link" href="#">Eventos</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">E-mail</a>
+                            <a className="nav-link" href="#">Reuniões</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link disabled" 
