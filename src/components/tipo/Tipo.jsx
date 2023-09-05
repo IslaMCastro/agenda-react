@@ -3,9 +3,7 @@ import { useState } from "react";
 
 function Tipo() {
     const [descricao, setDescricao] = useState("");
-    function criarObjeto(e){
-        setDescricao(e.target.value);
-    }
+    
     return (
         <div>
             <div>
@@ -16,9 +14,9 @@ function Tipo() {
                         className="form-control"
                         id="descricao"
                         placeholder="ex: Reunião"
-                        value={descricao} 
-                        onChange={criarObjeto}
-                        />
+                        value={descricao}
+                        onChange={(e)=> setDescricao(e.target.value)}
+                    />
                     <label htmlFor="descricao">Digite o Tipo</label>
                     <div className="d-grid gap-2 d-md-flex justify-content-md-end">
                         <button className="btn btn-primary me-md-2" type="button">salvar</button>
