@@ -1,5 +1,6 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import api from "../conn/Api";
 
 function Tipo() {
     const [descricao, setDescricao] = useState("");
@@ -15,6 +16,19 @@ function Tipo() {
         setId(index)
         setDescricao('')
     }
+    const pesquisarTudo = async () => {
+
+        try{
+            const response = await api.get('/situacoes')
+            if(response.data){
+                console.log(response.data)
+            }
+        }catch(error) {
+            console.log("Erro ao pesquisar tudo: ", error)
+        }
+
+    }
+
     return (
         <div>
             <div>
